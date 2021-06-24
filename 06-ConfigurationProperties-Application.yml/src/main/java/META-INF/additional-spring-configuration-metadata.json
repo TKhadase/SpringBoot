@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "family.brother.name",
+    "type": "java.lang.String",
+    "description": "A description for 'family.brother.name'"
+  },
+  {
+    "name": "family.brothers.name",
+    "type": "java.lang.String",
+    "description": "A description for 'family.brothers.name'"
+  },
+  {
+    "name": "family.brothers.middle-name",
+    "type": "java.lang.String",
+    "description": "A description for 'family.brothers.middle-name'"
+  },
+  {
+    "name": "family.brothers.mother-name",
+    "type": "java.lang.String",
+    "description": "A description for 'family.brothers.mother-name'"
+  }
+]}
