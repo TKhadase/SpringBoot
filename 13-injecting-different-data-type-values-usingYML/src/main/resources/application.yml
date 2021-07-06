@@ -1,0 +1,27 @@
+user:
+  id: 3
+  name: Tushar
+ #List Type values
+  friends:
+  - Shiv
+  - Rani
+  - Om
+  #Map Type values
+  id-details:
+    aadhar: 5555555
+    pan: QWERT4321
+    voterid: ABCD1234
+  #array Type values
+  nicknames:
+  - tushar
+  - chintu
+ #Set Type values
+  phone:
+  - 444555
+  - 789456
+  - 741852
+ #HAS-A Type values
+  company-details:
+    desg: Analyst
+    loc: Pune
+    name: Ebix
