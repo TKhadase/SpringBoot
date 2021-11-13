@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- for ConsoleAppender -->
+<!-- 
+<Configuration>
+	<Appenders>
+		<Console name="consApp" target="SYSTEM_OUT">
+			<PatternLayout  pattern="[%t] %7p  %d %30c : %L : %m %n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="consApp"/>
+		</Root>
+	</Loggers>
+</Configuration> -->
+
+
+<!-- RollingOver FileAppender -->
+<!-- <Configuration>
+	<Appenders>
+		<RollingFile name="rollingFileApp"  fileName="E:/c/logs/15SBRLogs.log"  filePattern="E:/c/logs/15SBRLogs.%i.log.zip" ignoreExceptions="false">
+			<PatternLayout >
+			<Pattern>[%t] %7p  %d %30c : %L : %m %n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10kb"/>
+			</Policies>
+			<DefaultRolloverStrategy max="2"/>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="rollingFileApp"/>
+		</Root>
+	</Loggers>
+</Configuration> -->
+
+
+<!-- Daily Rolling FileAppender -->
+<Configuration>
+	<Appenders>
+		<RollingFile name="dailyRollingFileApp"  fileName="E:/c/logs/15SBDLogs.log"  filePattern="E:/c/logs/15SBDLogs.%d{yyyy-MM-dd-hh-mm}.log.zip"  ignoreExceptions="false">
+			<PatternLayout >
+			<Pattern>[%t] %7p  %d %30c : %L : %m %n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy filePattern="E:/c/logs/15SBDLogs.%d{yyyy-MM-dd-hh-mm}.log.zip"/>
+			</Policies>
+			<DefaultRolloverStrategy max="2"/>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="dailyRollingFileApp"/>
+		</Root>
+	</Loggers>
+</Configuration>
+
